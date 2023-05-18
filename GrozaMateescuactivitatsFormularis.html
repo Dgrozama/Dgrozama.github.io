@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+
+    <style>
+        .titol {
+            background-color: rgb(179, 208, 219);
+        }
+        body {
+            background-color: azure;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left-column {
+            flex: 1; 
+            padding: 0 20px; 
+        }
+
+        .right-column {
+            flex: 1; 
+            padding: 0 20px; 
+        }
+    </style>
+</head>
+<body>
+<div class="titol">
+    <h1 style="text-align: center;">General Admission Registration</h1>
+</div>
+<br>
+
+<div class="container">
+    <div class="left-column">
+<form>
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="fname" value="" placeholder="David Luis" size="15">
+    <input type="text" id="lname" name="lname" value="" placeholder="Groza Mateescu" size="15">
+  </form>
+
+  <form action="/action_page.php" style="padding-top: 10px;">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="sample@example.com">
+  </form>
+
+  <p>Gender</p>
+  <form action="/action_page.php">
+   <input type="radio" id="male" name="fav_language" value="male">
+   <label for="male">Male</label>
+   <input type="radio" id="female" name="fav_language" value="female">
+   <label for="female">Female</label>
+  </form> 
+
+  <form action="/action_page.php" style="padding-top: 10px;">
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required maxlength="9">
+  </form>
+
+  <form action="/action_page.php" style="padding-top: 10px;">
+    <label for="phoneE">Emergency Contact</label>
+    <input type="tel" id="phoneE" name="phoneE" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required maxlength="9">
+  </form>
+
+  <p>Do you require parking?</p>
+  <form action="/action_page.php">
+   <input type="radio" id="yes" name="fav_language" value="yes">
+   <label for="yes">Yes</label>
+   <input type="radio" id="no" name="fav_language" value="no">
+   <label for="no">No</label>
+  </form> 
+
+  <p>What is your room preference?</p>
+  <form action="/action_page.php">
+   <input type="radio" id="sr" name="fav_language" value="sr">
+   <label for="sr">Single Room</label><br>
+   <input type="radio" id="shr" name="fav_language" value="shr">
+   <label for="shr">Shared Room</label><br>
+   <input type="radio" id="nrn" name="fav_language" value="nrn">
+   <label for="nrn">No Room Needed</label>
+  </form> 
+</div>
+<div class="right-column">
+    <p>Do you have dietary restricions?</p>
+    <form action="/action_page.php">
+        <input type="checkbox" id="none" name="none" value="none">
+        <label for="none">None</label><br>
+        <input type="checkbox" id="vegetarian" name="vegetarian" value="vegetarian">
+        <label for="vegetarian">Vegetarian</label><br>
+        <input type="checkbox" id="glutenallergy" name="glutenallergy" value="glutenallergy">
+        <label for="glutenallergy">Gluten Allergy</label><br>
+        <input type="checkbox" id="lactoseallergy" name="lactoseallergy" value="lactoseallergy">
+        <label for="lactoseallergy">Lactose Allergy</label><br>
+        <input type="checkbox" id="nutallergy" name="nutallergy" value="nutallergy">
+        <label for="nutallergy">Nut Allergy</label><br>
+        <input type="checkbox" id="shellfishallergy" name="shellfishallergy" value="shellfishallergy">
+        <label for="shellfishallergy">Shellfish Allergy</label><br>
+      </form>
+      <p>What activities will you attend?</p>
+      <form action="/action_page.php">
+          <input type="checkbox" id="agd" name="agd" value="agd">
+          <label for="agd">Award Gala Dinner</label><br>
+          <input type="checkbox" id="lchn" name="lchn" value="lchn">
+          <label for="lchn">Luncheon</label><br>
+          <input type="checkbox" id="th" name="th" value="th">
+          <label for="th">Town Hall</label><br>
+        </form>
+
+        <p>Do you want to see the list of other attendees and their profiles on the official event app?</p>
+        <form action="/action_page.php">
+         <input type="radio" id="yes1" name="fav_language" value="yes1">
+         <label for="yes1">Yes</label>
+         <input type="radio" id="no1" name="fav_language" value="no1">
+         <label for="no1">No</label>
+        </form> 
+</div>
+</div>
+
+<div class="titol">
+    <h2 style="text-align: center;">FORMULARI D'INSCRIPCIÓ DE JUGADORS - CLUB BÀSQUET ALCANAR</h2>
+</div>
+<br>
+<h3>Dades del jugador:</h3>
+<br>
+<form>
+    <label for="fnom">Nom:</label>
+    <input type="text" id="fnom" name="fnom" value="" placeholder="David Luis" size="15">
+    <label for="lnom">Cognoms:</label>
+    <input type="text" id="lnom" name="lnom" value="" placeholder="Groza Mateescu" size="15">
+  </form>
+
+  <form action="/action_page.php" style="margin-top: 10px;">
+    <label for="birthday">Data de naixement:</label>
+    <input type="date" id="birthday" name="birthday">
+    <label for="poblaciob">Lloc de naixement:</label>
+    <input type="text" id="poblaciob" name="poblaciob" value="" size="15">
+  </form>
+
+  <form style="margin-top: 10px;">
+    <label for="dni">DNI:</label>
+    <input type="text" id="dni" name="dni" value="" size="10" maxlength="10">
+    <label for="tis">TIS:</label>
+    <input type="text" id="tis" name="tis" value="" size="15" maxlength="14">
+  </form>
+  
+  <form style="margin-top: 10px;">
+    <label for="adreca">Adreça:</label>
+    <input type="text" id="adreca" name="adreca" value="" size="50">
+  </form>
+
+  <form style="margin-top: 10px;">
+    <label for="pc">Codi Postal:</label>
+    <input type="text" id="pc" name="pc" value="" size="5" maxlength="5">
+    <label for="poblacio1">Població:</label>
+    <input type="text" id="poblacio1" name="poblacio1" value="" placeholder="Tortosa" size="15">
+  </form>
+
+  <form style="margin-top: 10px;">
+    <label for="prov">Provincia:</label>
+    <input type="text" id="prov" name="prov" value="" size="25">
+  </form>
+
+  <form action="/action_page.php" style="padding-top: 10px;">
+    <label for="ce">Correu electrònic:</label>
+    <input type="email" id="ce" name="ce" placeholder="exemple@exemple.com">
+  </form>
+
+  <form action="/action_page.php" style="padding-top: 10px;">
+    <label for="tlf">Telèfon:</label>
+    <input type="tel" id="tlf" name="tlf" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="999-999-999" required maxlength="9">
+  </form>
+<br>
+<h3>Dades del pare/mare o tutor (en el cas que el jugador sigui menor d'edat):</h3>
+<br>
+<form>
+    <label for="fnom1">Nom:</label>
+    <input type="text" id="fnom1" name="fnom1" value="" placeholder="David Luis" size="15">
+    <label for="lnom1">Cognoms:</label>
+    <input type="text" id="lnom1" name="lnom1" value="" placeholder="Groza Mateescu" size="15">
+  </form>
+ 
+
+  <form action="/action_page.php" style="margin-top: 10px;">
+    <label for="dni2">DNI:</label>
+    <input type="text" id="dni2" name="dni2" value="" size="10" maxlength="10">
+    <label for="si2">Soci Ampa:</label>
+    <input type="radio" id="si2" name="fav_language" value="si2">
+    <label for="si2">Si</label>
+    <input type="radio" id="no2" name="fav_language" value="no2">
+    <label for="no2">No</label>
+  </form>
+
+  <form action="/action_page.php" style="padding-top: 10px;">
+    <label for="ce1">Correu electrònic:</label>
+    <input type="email" id="ce1" name="ce1" placeholder="exemple@exemple.com">
+  </form>
+
+  <form action="/action_page.php" style="padding-top: 10px;">
+    <label for="tlf2">Telèfon:</label>
+    <input type="tel" id="tlf2" name="tlf2" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required maxlength="9" placeholder="999-999-999">
+  </form>
+
+  <p>Signatura:</p>
+  <form action="/action_page.php">
+  <input type="file" id="myfile" name="myfile"><br><br>
+  </form>
+
+  <form style="text-align: right;">
+    <label for="dia">Alcanar,</label>
+    <input type="text" id="dia" name="dia" value="" placeholder="21" size="5" maxlength="2">
+    <label for="mes">de</label>
+    <input type="text" id="mes" name="mes" value="" placeholder="Gener" size="15" maxlength="9">
+    <label for="any">de 20</label>
+    <input type="text" id="any" name="any" value="" placeholder="23" size="5" maxlength="2">
+  </form>
+  <br>
+  <p>El signat passa ser soci del Club Bàsquet Alcanar. La signatura de la inscripció autoritza la cessió d'imatge del jugador en qualsevol mitjà de comunicació així com també el dipòsit de les dades de jugador i tutor a la base de dades del Club Bàsquet Alcanar, d'on podran ser eliminades si es sol·licita per escrit.</p>
+
+  <hr>
+  <h3>Dades per la domiciliació bancaria:</h3>
+  <form>
+    <label for="nomt">Nom del titular:</label>
+    <input type="text" id="nomt" name="nomt" value="" placeholder="David Luis" size="15">
+  </form>
+  
+  <form style="padding-top: 10px;">
+  <label for="cogt">Cognoms del titular:</label>
+  <input type="text" id="cogt" name="cogt" value="" placeholder="Groza Mateescu" size="15">
+  </form>
+
+  <form action="/action_page.php" style="margin-top: 10px;">
+    <label for="dni3">DNI:</label>
+    <input type="text" id="dni3" name="dni3" value="" size="10" maxlength="10">
+    <label for="si2">Soci Ampa:</label>
+    <input type="radio" id="si3" name="fav_language" value="si3">
+    <label for="si3">Si</label>
+    <input type="radio" id="no3" name="fav_language" value="no3">
+    <label for="no3">No</label>
+  </form>
+
+  <form style="margin-top: 10px;">
+    <label for="entitat">Entitat:</label>
+    <input type="text" id="entitat" name="entitat" value="" size="50">
+  </form>
+
+  <form style="margin-top: 10px;">
+    <label for="adreca1">Adreça:</label>
+    <input type="text" id="adreca1" name="adreca1" value="" size="50">
+  </form>
+
+  <form style="margin-top: 10px;">
+    <label for="pc1">Codi Postal:</label>
+    <input type="text" id="pc1" name="pc1" value="" size="5" maxlength="5">
+    <label for="poblacio2">Població:</label>
+    <input type="text" id="poblacio2" name="poblacio2" value="" placeholder="Tortosa" size="15">
+  </form>
+
+  <form style="margin-top: 10px;">
+    <label for="prov1">Provincia:</label>
+    <input type="text" id="prov1" name="prov1" value="" size="25">
+  </form>
+
+  <form style="margin-top: 10px; text-align: left;">
+    <label for="entitat1">Entitat</label>
+    <input type="text" id="entitat1" name="entitat1" value="" size="6">
+    <label for="ofi1">Oficina</label>
+    <input type="text" id="ofi1" name="ofi1" value="" size="6">
+    <label for="dc">D.C</label>
+    <input type="text" id="dc" name="dc" value="" size="6">
+    <label for="dc">Compte Núm.</label>
+    <input type="text" id="dc" name="dc" value="" size="22" maxlength="20">
+  </form>
+
+  <p>Signatura:</p>
+  <form action="/action_page.php">
+  <input type="file" id="myfile1" name="myfile1"><br><br>
+  </form>
+
+  <form style="text-align: right;">
+    <label for="dia1">Alcanar,</label>
+    <input type="text" id="dia1" name="dia1" value="" placeholder="21" size="5" maxlength="2">
+    <label for="mes1">de</label>
+    <input type="text" id="mes1" name="mes1" value="" placeholder="Gener" size="15" maxlength="9">
+    <label for="any1">de 20</label>
+    <input type="text" id="any1" name="any1" value="" placeholder="23" size="5" maxlength="2">
+  </form>
+
+</body>
+</html>

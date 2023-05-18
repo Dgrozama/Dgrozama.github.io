@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacions</title>
+    <link rel="icon" href="musica.png" />
+    
+    <style>
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.texto {
+  text-align: center;
+}
+
+.animated {
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+}
+
+.M{
+  animation-duration: 4s;
+  animation-name: M;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes M {
+  0%   {color: black;}
+  25%  {color: blue;}
+  50%  {color: violet;}
+  100% {color: yellowgreen;}
+}
+.U {
+  position: relative;
+  animation-name: U;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes U {
+  0%   {color:red; top:0px;}
+  25%  {color:yellow; top:70px;}
+  50%  {color:blue; top:-70px;}
+  75%  {color:green; top:70px;}
+  100% {color:red; top:0px;}
+}
+.S {
+  animation-name: S;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes S {
+  0% {
+    transform: rotate(90deg);
+    color: aqua;
+  }
+  50% {
+    transform: rotate(-45deg);
+    color: blue;
+  }
+  75% {
+    transform: rotate(95deg);
+    color: blue;
+  }
+  100% {
+    transform: rotate(720deg);
+    color: brown;
+  }
+}
+
+.I {
+  animation-name: I;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes I {
+  from {
+    transform: rotate(-45deg);
+    color: red;
+  }
+  to {
+    transform: rotate(-120deg);
+    color: violet;
+  }
+}
+.C {
+  animation-name: rotateC;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+  transition: color 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotateC {
+  0% {
+    transform: rotate(-0deg);
+    color: blue;
+  }
+  50% {
+    transform: rotate(-45deg);
+    color: blue;
+  }
+  100% {
+    transform: rotate(-360deg);
+    color: green;
+  }
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.carregador-musica {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  
+}
+.linia {
+  width: 10px;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    purple,
+    crimson);
+}
+.linia1 {
+  left: 0;
+  animation: dance 0.5s ease alternate infinite;
+}
+.linia2 {
+  left: 20px;
+  animation: dance 0.5s 0.2s ease alternate infinite;
+}
+.linia3 {
+  left: 40px;
+  animation: dance 0.5s 0.4s ease alternate infinite;
+}
+.linia4 {
+  left: 60px;
+  animation: dance 0.5s 0.6s ease alternate infinite;
+}
+.linia5 {
+  left: 80px;
+  animation: dance 0.5s 0.8s ease alternate infinite;
+}
+.linia6 {
+  left: 100px;
+  animation: dance 0.5s 0.1s ease alternate infinite;
+}
+.linia7 {
+  left: 120px;
+  animation: dance 0.5s 0.7s ease alternate infinite;
+}
+.linia8 {
+  left: -20px;
+  animation: dance 0.5s 0.9s ease alternate infinite;
+}
+.linia9 {
+  left: -40px;
+  animation: dance 0.5s 0.3s ease alternate infinite;
+}
+.linia10 {
+  left: -60px;
+  animation: dance 0.5s 0.6s ease alternate infinite;
+}
+.linia11 {
+  left: -80px;
+  animation: dance 0.5s 1s ease alternate infinite;
+}
+.linia12 {
+  left: -100px;
+  animation: dance 0.5s 0.5s ease alternate infinite;
+}
+.linia13 {
+  left: -120px;
+  animation: dance 0.5s 0.2s ease alternate infinite;
+}
+
+@keyframes dance {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80%;
+  }
+}
+
+.music-icons {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+}
+
+.music-icons i {
+  position: absolute;
+  font-size: 7em;
+  color: #fff;
+  animation: move-music-icons 4s infinite linear;
+}
+
+.music-icons i:first-child {
+  animation-delay: 0.5s;
+}
+
+@keyframes move-music-icons {
+  0% {
+    left: 0;
+    color: #f00;
+    transform: rotate(-33deg);
+  }
+  50% {
+    left: calc(100% - 50px);
+    color: #0f0;
+  }
+  100% {
+    left: 0;
+    color: #00f;
+  }
+}
+
+    </style>
+
+</head>
+<body>
+
+<div class="texto">
+    <table>
+        <tr>
+            <td class="animated M">M</td>
+            <td class="animated U">U</td>
+            <td class="animated S">S</td>
+            <td class="animated I">I</td>
+            <td class="animated C">C</td>
+        </tr>
+    </table>
+</div>
+<br>
+<div class="container"></div>
+  <section>
+    <div class="carregador-musica">
+        <div class="linia linia1"></div>
+        <div class="linia linia2"></div>
+        <div class="linia linia3"></div>
+        <div class="linia linia4"></div>
+        <div class="linia linia5"></div>
+        <div class="linia linia6"></div>
+        <div class="linia linia7"></div>
+        <div class="linia linia8"></div>
+        <div class="linia linia9"></div>
+        <div class="linia linia10"></div>
+        <div class="linia linia11"></div>
+        <div class="linia linia12"></div>
+        <div class="linia linia13"></div>
+    </div>
+  </section>
+<br>
+
+<div class="music-icons">
+  <i class="fas fa-car">♫</i>
+  <i class="fas fa-music">♪</i>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<div class="youtube-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/hu8afEVsRVw" frameborder="0" allowfullscreen></iframe>
+</div>
+<br>
+<audio controls>
+  <source src="AUD-20221205-WA0004.opus" type="audio/mpeg">
+  Tu navegador no soporta la reproducción de audio.
+</audio>
+</body>
+</html>

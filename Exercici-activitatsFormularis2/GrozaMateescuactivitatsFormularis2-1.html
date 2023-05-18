@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+
+    <style>
+        .titol {
+            background-color: rgb(179, 208, 219);
+        }
+        body {
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+
+<div class="titol">
+    <h2 style="text-align: center;">FORMULARI D'INSCRIPCIÓ DE LA MARXA SEDENTARISTA DEL 24 I 25 DE JUNY</h2>
+</div>
+<br>
+<h3>Dades del sol·licitant:</h3>
+<br>
+<form>
+    <label for="fnom">Nom:</label>
+    <input type="text" id="fnom" name="fnom" value="" placeholder="David Luis" size="15">
+    <label for="lnom">Cognoms:</label>
+    <input type="text" id="lnom" name="lnom" value="" placeholder="Groza Mateescu" size="15">
+  </form>
+
+  <form style="margin-top: 10px;">
+    <label for="dni">DNI:</label>
+    <input type="text" id="dni" name="dni" value="" size="10" maxlength="10">
+  </form>
+
+  <form action="/action_page.php" style="padding-top: 10px;">
+    <label for="tlf">Telèfon:</label>
+    <input type="tel" id="tlf" name="tlf" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="999-999-999" required maxlength="9">
+  </form>
+
+  <form action="/action_page.php" style="padding-top: 10px;">
+    <label for="ce">Correu electrònic:</label>
+    <input type="email" id="ce" name="ce" placeholder="exemple@exemple.com">
+  </form>
+
+  <form action="/action_page.php" style="margin-top: 10px;">
+    <label for="birthday">Data de naixement:</label>
+    <input type="date" id="birthday" name="birthday">
+  </form>
+  
+  <form style="margin-top: 10px;">
+    <label for="pc">Codi Postal:</label>
+    <input type="text" id="pc" name="pc" value="" size="5" maxlength="5">
+    <form style="margin-top: 10px;">
+      <label for="adreca">Adreça:</label>
+      <input type="text" id="adreca" name="adreca" value="" size="50">
+    </form>
+  </form>
+
+  <p>Sexe</p>
+  <form action="/action_page.php">
+   <input type="radio" id="male" name="fav_language" value="male">
+   <label for="male">Home</label>
+   <input type="radio" id="female" name="fav_language" value="female">
+   <label for="female">Dona</label>
+   <input type="radio" id="noind" name="fav_language" value="noind">
+   <label for="noind">No ho vull indicar</label>
+  </form> 
+
+  <p>Tens alguna malaltia del cor?</p>
+  <form action="/action_page.php">
+   <input type="radio" id="sii" name="fav_language" value="sii">
+   <label for="sii">Sí</label>
+   <input type="radio" id="noo" name="fav_language" value="noo">
+   <label for="noo">No</label>
+  </form> 
+
+  <p>Tens alguna al·lèriga?</p>
+  <form action="/action_page.php">
+   <input type="radio" id="sii1" name="fav_language" value="sii1">
+   <label for="sii1">Sí</label>
+   <input type="radio" id="noo1" name="fav_language" value="noo1">
+   <label for="noo1">No</label>
+   <p>En cas de ser sí, quines?</p>
+   <input type="text" id="alg" name="alg" value="" size="50">
+  </form> 
+
+  <p>A quina marxa t'apuntes?</p>
+  <form action="/action_page.php">
+   <input type="radio" id="mrx1" name="fav_language" value="mrx1">
+   <label for="mrx1">Marxa 1 (12km)</label>
+   <input type="radio" id="mrx2" name="fav_language" value="mrx2">
+   <label for="mrx2">Marxa 2 (27km)</label>
+  </form> 
+
+  <p>Puntuació de les rutes escollides d'enguany</p>
+  <form action="/action_page.php" method="get">
+    <label for="vol">Puntuació del 1 al 10:</label>
+    <input type="range" id="vol" name="vol" min="1" max="10">
+    <input type="submit" value="Submit">
+  </form>
+
+  <p>Preferència sobre els postres:</p>
+  <form action="/action_page.php">
+      <input type="checkbox" id="fruita" name="fruita" value="fruita">
+      <label for="fruita">Fruita</label><br>
+      <input type="checkbox" id="flam" name="flam" value="flam">
+      <label for="flam">Flam</label><br>
+      <input type="checkbox" id="iogurt" name="iogurt" value="iogurt">
+      <label for="iogurt">Iogurt</label><br>
+      <input type="checkbox" id="choco" name="choco" value="choco">
+      <label for="choco">Pastís de xocolata</label><br>
+    </form>
+
+  <p>Imatge amb el pagament fet:</p>
+  <form action="/action_page.php">
+  <input type="file" id="myfile" name="myfile"><br><br>
+  </form>
+
+</body>
+</html>
